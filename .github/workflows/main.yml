@@ -27,3 +27,12 @@ jobs:
       -  name: Execução do teste
          run: mocha src/test/convert.js
      
+      -   name: Construindo a imagem Docker
+          uses: docker/setup-buildx-action@v2
+          with:
+            context: src
+            file: src/dockerfile
+            push: true
+            tags: |
+              lorenzo2808/aula-conversao-temperatura:v1
+              
