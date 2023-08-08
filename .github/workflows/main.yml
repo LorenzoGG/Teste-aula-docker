@@ -20,7 +20,7 @@ jobs:
 
       -  name: instalação do Mocha para teste
          run: | 
-         cd src;
-         npm install -g mocha;
-         npm install
+           cd src;
+           npm install -g mocha;
+           npm install
      
