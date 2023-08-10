@@ -44,6 +44,6 @@ jobs:
             file: src/dockerfile
             push: true
             tags: |
-              lorenzo2808/aula-conversao-temperatura:v1
+              lorenzo2808/aula-conversao-temperatura:${{ github.run_number }}
               
               
